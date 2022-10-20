@@ -16,6 +16,6 @@ export const getArnieQuotes = async (urls: string[]): Promise<TResult[]> => {
       ? { 'FAILURE': 'Your request has been terminated' }
       : { 'Arnie Quote': JSON.parse(x.body).message })
   })
-
+//
   return allQuotes
 };
